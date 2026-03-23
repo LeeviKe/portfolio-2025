@@ -1,0 +1,12 @@
+@if (project.id === 1){
+<div class="specialLayout">
+  <p>{{ project.name }}</p>
+  <p>{{project.description}}</p>
+</div>
+
+} @else {
+<div class="layout">
+  <p>{{ project.name }}</p>
+  <p>{{project.description}}</p>
+</div>
+}

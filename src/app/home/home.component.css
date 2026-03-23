@@ -1,0 +1,66 @@
+/* styles.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+  background:
+  /* dark overlay */
+    linear-gradient(rgba(0, 0, 0, 0.3)),
+    /* top-left: icy blue glow */
+      radial-gradient(
+        700px circle at 0% 0%,
+        hsl(210, 90%, 75%) 10%,
+        hsl(215, 80%, 60%) 35%,
+        hsl(220, 60%, 40%) 70%,
+        transparent 100%
+      ),
+    /* bottom-right: deep electric blue glow */
+      radial-gradient(
+        700px circle at 100% 100%,
+        hsl(200, 85%, 70%) 10%,
+        hsl(205, 75%, 55%) 35%,
+        hsl(210, 55%, 35%) 70%,
+        transparent 100%
+      ),
+    /* top-right: soft cyan highlight */
+      radial-gradient(
+        600px circle at 100% 0%,
+        hsl(190, 90%, 75%) 10%,
+        hsl(185, 80%, 60%) 40%,
+        transparent 80%
+      ),
+    /* bottom-left: muted blue haze */
+      radial-gradient(
+        600px circle at 0% 100%,
+        hsl(220, 70%, 70%) 10%,
+        hsl(225, 60%, 50%) 40%,
+        transparent 80%
+      );
+
+  background-attachment: fixed;
+}
+
+.content {
+  width: 100%;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+section > * {
+  max-width: 100%;
+}

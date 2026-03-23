@@ -1,0 +1,7 @@
+<div class="layout">
+  <div class="projects">
+    @for (item of items; track item.id) {
+    <app-project-card [project]="item" [routerLink]="[item.link]" />
+    }
+  </div>
+</div>

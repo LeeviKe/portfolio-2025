@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth; /* smooth scrolling */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
