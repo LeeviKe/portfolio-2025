@@ -1,6 +1,7 @@
 .layout {
   display: flex;
   flex-direction: column;
+  width: 85vw;
 }
 
 .projects {
