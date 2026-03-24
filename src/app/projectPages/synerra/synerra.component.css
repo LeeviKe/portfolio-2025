@@ -101,7 +101,7 @@ section > * {
   position: relative;
   overflow: hidden;
   width: 80vw;
-  height: auto;
+  height: 120vh;
 }
 
 .links-container {
