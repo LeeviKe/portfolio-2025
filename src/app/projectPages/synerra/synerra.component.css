@@ -101,7 +101,7 @@ section > * {
   position: relative;
   overflow: hidden;
   width: 80vw;
-  height: 120vh;
+  height: auto;
 }
 
 .links-container {
@@ -170,4 +170,67 @@ section > * {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 580px) {
+  .links-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(60px, 1fr));
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .links-box {
+    width: 100%;
+    max-width: 108px;
+    min-width: 60px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .links-box p {
+    font-size: 0.85rem;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0 6px;
+  }
+
+  .links-box iframe,
+  .links-box img {
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .links-container {
+    gap: 8px;
+  }
+
+  .links-box {
+    max-width: 90px;
+  }
+
+  .links-box p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 406px) {
+  .layout2 {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 282px) {
+  .layout2 {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 380px) {
+  .links-box {
+    max-width: 80px;
+  }
 }

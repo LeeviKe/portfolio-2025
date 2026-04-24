@@ -54,3 +54,76 @@
   justify-self: start;
   margin-left: -2vw; /* <-- shift text more left */
 }
+
+@media (max-width: 900px) {
+  .glass-card {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .me {
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+  }
+
+  .meImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .meImage img {
+    width: 50%;
+    margin: 12px auto 0;
+  }
+
+  .meText {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .glass-card {
+    border-radius: 16px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .me {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+
+  .meImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .meImage img {
+    width: 45%;
+    margin: 10px auto 0;
+  }
+
+  .meText {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .meText h1 {
+    font-size: 1.8em;
+  }
+
+  .meText p {
+    font-size: 0.9em;
+  }
+}

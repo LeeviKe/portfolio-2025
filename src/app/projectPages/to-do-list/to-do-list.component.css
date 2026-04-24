@@ -101,7 +101,7 @@ section > * {
   position: relative;
   overflow: hidden;
   width: 80vw;
-  height: 100vh;
+  height: auto;
 }
 
 .links-container {
@@ -170,4 +170,16 @@ section > * {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 406px) {
+  .layout2 {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 282px) {
+  .layout2 {
+    margin-top: 180px;
+  }
 }

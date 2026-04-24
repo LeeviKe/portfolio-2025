@@ -1,6 +1,7 @@
 .navbar {
   position: fixed;
   inset: 0 0 auto 0;
+
   height: 80px;
   z-index: 10;
   display: flex;
@@ -14,6 +15,42 @@
 .header .menu {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: center;
+    padding: 0 30px;
+  }
+
+  .header .menu {
+    justify-content: center;
+  }
+
+  .link {
+    margin: 15px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: auto;
+    min-height: 80px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .header .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .link {
+    margin: 10px 12px;
+    padding: 10px 0;
+  }
 }
 
 .link {
